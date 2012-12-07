@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	$(document).on("ready",start);
+        function start(){
+        var sec = 0;
+        	setInterval(function(){
+				
+				$("#hour").attr("transform","rotate("+sec*6+")")
+				sec = sec+1;
+        	},1000)
+            
+
+        }
+
+
+	</script>
+</head>
+
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+<circle cx="500" cy="150" r="150" stroke="black"
+  stroke-width="2" fill="red" />
+
+<g  transform="translate(500,150)">
+<g  id="hour" transform="rotate(0)">
+<path id="hours" d="M0,0l-5,-130l5,-10l5,10l-5,130" />
+</g>
+</g>
+</svg>
+
+</body>
+</html>
