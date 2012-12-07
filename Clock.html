@@ -6,8 +6,7 @@
 	$(document).on("ready",start);
         function start(){
         var sec = 0;
-        	setInterval(function(){
-				
+        	setInterval(function(){				
 				$("#hour").attr("transform","rotate("+sec*6+")")
 				sec = sec+1;
         	},1000)
@@ -21,14 +20,16 @@
 
 <body>
 
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+xmlns:xlink="http://www.w3.org/1999/xlink">
 <circle cx="500" cy="150" r="150" stroke="black"
   stroke-width="2" fill="red" />
-
+<image xlink:href="./foreca_img/symb-70x70/d000.png" x="465" y="0" width="70" height="70" />
 <g  transform="translate(500,150)">
-<g  id="hour" transform="rotate(0)">
-<path id="hours" d="M0,0l-5,-130l5,-10l5,10l-5,130" />
-</g>
+	<g  id="hour" transform="rotate(0)">
+		<path id="hours" d="M0,0l-5,-130l5,-10l5,10l-5,130" />
+
+	</g>
 </g>
 </svg>
 
