@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<style>
+body
+{
+background-color:#6699FF;
+}
+h1
+{
+color:Pink;
+text-align:center;
+}
+p
+{
+font-family:"Times New Roman";
+text-align:center;
+font-size:20px;
+}
+.mainimage
+{
+float:left;
+}
+img 
+{
+float:top;
+}
+.button
+{
+position:absolute;
+top: 170px;
+left: 54px;
+}
+</style>
